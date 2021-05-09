@@ -1,0 +1,14 @@
+                                   Controlling Stearing of Self-Driving vehicle
+ There are two approach of doing that:
+ 1. By Using Imitation Learning:For each State (Deflection from predicted path i.e. angle) take the correct action and by using imitation learning
+                                train the NN to predict correct correct action for somewhat different state or somewhat similar state.
+
+ 2. By Using Reinforcement Learning: For each state (Deflection from predicted path i.e. angle) we can calculate reward (by using reward function)
+                                     and train the NN by using State of art RL Algorithm by just using reward function to give better action.
+                                     For this we need very robust reward function.
+
+                                     From step function take Random Frame. Or may be last Frame.I need to think about how 4 Frames are taken.
+
+# Two Problems
+1. Data/Sample Efficiency : Distributional RL(C51)
+2. Exploration : Do Noise to action or Do Noise Parameter.
